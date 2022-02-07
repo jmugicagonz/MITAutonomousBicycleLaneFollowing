@@ -1,0 +1,28 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+  <arg name="joy_dev" default="/dev/input/js0" />
+  <!-- <arg name="config_filepath" default="$(find pev_sensors)/config/twist_joy_config.yaml" /> -->
+  <arg name="max_speed" default="2.0"/>
+  <arg name="max_angle" default="0.6"/>
+
+
+  <node pkg="joy" type="joy_node" name="joy_node">
+    <remap from="joy" to="joy"/>
+    <param name="dev" value="$(arg joy_dev)" />
+    <param name="deadzone" value="0.3" />
+    <param name="autorepeat_rate" value="20" />
+  </node>
+
+
+
+  <!-- Launch ackermann_drive_joyop to teleoperate robots with ackermann steering -->
+  <!-- <node pkg="pev_drive" name="joy_to_ackermann" type="joy_to_ackermann"  output='screen'>
+    <param name="max_speed" value="1.0" />
+    <param name="max_angle" value="0.6" />
+  </node> -->
+
+
+
+
+</launch>

@@ -1,0 +1,2 @@
+prototype:vesc/vesc:vesc/vesc_ackermann:vesc/vesc_driver:vesc/vesc_msgs
+-DCATKIN_DEVEL_PREFIX=/home/nvidia/MIT_Autonomous_Bicycle_Project/joystick/devel -DCMAKE_INSTALL_PREFIX=/home/nvidia/MIT_Autonomous_Bicycle_Project/joystick/install -G Unix Makefiles

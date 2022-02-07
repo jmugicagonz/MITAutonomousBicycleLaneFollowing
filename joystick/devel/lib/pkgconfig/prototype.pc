@@ -1,0 +1,8 @@
+prefix=/home/nvidia/MIT_Autonomous_Bicycle_Project/joystick/devel
+
+Name: prototype
+Description: Description of prototype
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nvidia/MIT_Autonomous_Bicycle_Project/joystick/devel/lib 
+Requires: 

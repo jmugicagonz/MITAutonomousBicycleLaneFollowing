@@ -1,0 +1,7 @@
+// vesc middrive
+KERNEL=="ttyACM[0-9]*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", ATTRS{devpath}=="2.1", MODE="666", SYMLINK+="vesc_steering"
+
+KERNEL=="ttyACM[0-9]*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", ATTRS{devpath}=="2.3", MODE="666", SYMLINK+="vesc_drive"
+
+// udevadm info -a -n /dev/ttyACM0 | grep '{devpath}'
+// udevadm info -a -n /dev/ttyACM1 | grep '{devpath}'

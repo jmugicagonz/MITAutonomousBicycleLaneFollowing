@@ -1,0 +1,10 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+  <node pkg="prototype" type="joysticicktest" name="joysticicktest" output="screen">
+    <remap from="steering_motor" to="/steering/commands/motor/position" />
+    <remap from="drive_motor" to="/drive/commands/motor/speed" />
+  </node>
+  <include file="$(find prototype)/launch/joy.launch" />
+  <include file="$(find prototype)/launch/vesc.launch" />
+</launch>

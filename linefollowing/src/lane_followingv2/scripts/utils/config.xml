@@ -1,0 +1,10 @@
+<config>
+	<verbose>true</verbose>
+	<display_images>true</display_images>
+	<particle_filter num="500"></particle_filter>
+	<camera name="Logitech C920 Pro">
+		<frame_size width="960" height="540"></frame_size>
+		<region_of_interest  x="0" y="345" width="960" height="165"></region_of_interest>
+		<ipm_points top_right="460" top_left="531" bottom_left="799" bottom_right="218"></ipm_points>
+	</camera>
+</config>

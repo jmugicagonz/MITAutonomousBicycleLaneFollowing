@@ -1,0 +1,18 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+  <node pkg="prototype" type="joysticicktest" name="joysticicktest" output="screen">
+    <remap from="steering_motor" to="/steering/commands/motor/position" />
+    <remap from="drive_motor" to="/drive/commands/motor/speed" />
+  </node>
+  <node pkg="lane_following" type="laneControl.py" name="laneControl">
+  <param name="max_angle_deviation_two_lanes" value = "1" />
+  <param name="max_angle_deviation_one_lane" value = "1" />
+  <param name="sensitivity" value = "40" />
+  </node>
+  <include file="$(find prototype)/launch/joy.launch" />
+  <include file="$(find prototype)/launch/vesc.launch" />
+  
+</launch>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="steering">
+    <node pkg="vesc_driver" type="vesc_driver_node" name="vesc_driver_steering" output="screen">
+      <param name="port" value="/dev/vesc_steering" />
+    </node>
+  </group>
+   <group ns="drive">
+    <node pkg="vesc_driver" type="vesc_driver_node" name="vesc_driver_drive" output="screen">
+      <param name="port" value="/dev/vesc_drive" />
+    </node> 
+  </group> 
+</launch>
