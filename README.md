@@ -7,6 +7,6 @@
 ███████╗██║  ██║██║ ╚████║███████╗    ██║     ╚██████╔╝███████╗███████╗╚██████╔╝╚███╔███╔╝██║██║ ╚████║╚██████╔╝    ██║ ╚═╝ ██║██║   ██║       ██║  ██║██████╔╝
 ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝    ╚═╝      ╚═════╝ ╚══════╝╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚═╝╚═╝   ╚═╝       ╚═╝  ╚═╝╚═════╝ 
 
-This is the repo of the MIT Autonomous Bicycle Project 
+This is the repo for the lane following algorithm, created for the MIT Autonomous Bicycle Project 
 
 ````
